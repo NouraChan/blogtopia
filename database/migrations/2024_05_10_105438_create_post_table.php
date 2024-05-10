@@ -17,7 +17,9 @@ return new class extends Migration
             $table->float($wordcount);
             $table->string('Author');
             $table->string('Category');
-            
+            $table->text('Content');
+            $table->text('Description');
+
             $table->timestamps();
         });
     }
