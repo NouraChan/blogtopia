@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/category', [CategoryController::class ,'all']);
+Route::get('/post', [PostController::class ,'all']);
