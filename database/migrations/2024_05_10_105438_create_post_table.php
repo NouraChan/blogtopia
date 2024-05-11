@@ -19,7 +19,8 @@ return new class extends Migration
             $table->string('Category');
             $table->text('Content');
             $table->text('Description');
-
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
