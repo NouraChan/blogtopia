@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('post', function (Blueprint $table) {
             $table->id();
             $table->string('Title');
-            $table->float($wordcount);
             $table->string('Author');
             $table->string('Category');
             $table->text('Content');
